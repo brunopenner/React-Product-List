@@ -4,7 +4,7 @@ import LogoS from '../../assets/images/logo-s.png'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faGithub, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => (
     <div className='nav-bar'>
@@ -25,14 +25,24 @@ const Sidebar = () => (
             </NavLink>
         </nav>
         <ul>
-            <li>
+        <li>
                 <a target="_blank" rel='noreferrer' href="https://www.linkedin.com/in/bruno-penner-254441a3/">
+                    <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+                </a>
+            </li>
+            <li>
+                <a target="_blank" rel='noreferrer' href="https://github.com/brunopenner/">
                     <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
                 </a>
             </li>
             <li>
-                <a target="_blank" rel='noreferrer' href="https://www.linkedin.com/in/bruno-penner-254441a3/">
-                    <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+                <a target="_blank" rel='noreferrer' href="https://www.facebook.com/pennerwebdev">
+                    <FontAwesomeIcon icon={faFacebook} color="#4d4d4e" />
+                </a>
+            </li>
+            <li>
+                <a target="_blank" rel='noreferrer' href="https://www.youtube.com/channel/UCiehdABI5FZ8um-X2-Oz47A">
+                    <FontAwesomeIcon icon={faYoutube} color="#4d4d4e" />
                 </a>
             </li>
         </ul>
